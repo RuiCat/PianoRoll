@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="./PianoRoll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js"></script>
+    <link rel="stylesheet" href="./PianoRoll.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (e) {
+            pianoroll = new PianoRoll(document.body, 100, 800, 900, 50);
+            score = new PianoRollScore(pianoroll, "喵");
+            for (let i = 0; i < 100; i++) {
+                score.AddWord("喵", "miao", i, 2, 0, 2);
+            }
+            score.AddCurve(0, 10);
+            score.AddCurve(1, 10);
+            score.AddCurve(2, 5);
+            score.AddCurve(3, 20);
+            score.AddCurve(4, 10);
+            score.AddCurve(5, 20);
+            score.AddCurve(6, 10);
+            score.AddCurve(7, 10);
+            score.AddCurve(8, 20);
+            score.Draw()
+        });
+
+    </script>
+</body>

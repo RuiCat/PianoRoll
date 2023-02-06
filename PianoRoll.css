@@ -1,0 +1,24 @@
+.pianoroll {
+    margin: 0px;
+    overflow: scroll;
+    position: absolute;
+    border: 1px solid #000;
+}
+
+.pianoroll div {
+    position: absolute;
+}
+
+.pianoroll svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.pianoroll * {
+    user-select: none;
+}
+
+body {
+    margin: 0px;
+}
